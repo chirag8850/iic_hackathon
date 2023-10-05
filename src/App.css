@@ -1,0 +1,306 @@
+
+/* NAvbar */
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar{
+  padding: 1rem;
+  background-color: transparent; 
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .logo{
+  float: left;
+  color: #cc8800;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.navbar .logo:hover{
+  color: rgba(216, 172, 76, 0.98);
+}
+
+.navbar .nav-items{
+  float: right;
+}
+.navbar a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  transition: color 0.3s ease-in-out; 
+}
+
+.navbar.scrolled {
+  background-color: rgba(187, 187, 187, 0.6);
+  position: sticky; 
+  top: 0; 
+  z-index: 100;
+  
+}
+
+.navbar.scrolled a {
+  color: black; 
+}
+
+.navbar.scrolled .connect-button {
+  background-color : #cc8800; 
+  &:hover {
+    background-color: rgba(216, 172, 76, 0.98);
+    color: black;
+    border-bottom: none;
+  }
+}
+
+.navbar a:hover{
+  border-bottom: 0.1rem solid black;
+}
+
+.navbar .nav-item{
+  display: inline-block;
+  list-style: none;
+  padding: 1.5rem;  
+}
+
+.navbar::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.navbar .connect-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #cc8800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+
+  &:hover {
+    background-color:rgba(216, 172, 76, 0.98);
+    color: black;
+    border-bottom: none;
+  }
+}
+
+
+
+/* Header */
+
+.header {
+  position: relative;
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('/public/background_img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+.header-content p {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  color: #cc8800;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.header .chat-head{
+  margin-top: 3rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.bot-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #cc8800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+
+  &:hover {
+    background-color: rgba(216, 172, 76, 0.98);
+    color: black;
+    border-bottom: none;
+  }
+}
+
+.chatbot-image {
+  width: 35px;
+  height: 35px;
+  margin-left: 1rem;
+}
+
+
+
+/* About */
+
+.about-area {
+  padding: 70px 0;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-heading {
+  float: left; 
+  width: 50%; 
+}
+
+.about-heading h4 {
+  background: rgba(0, 0, 0, 0) url("/public/bg.png") no-repeat scroll left bottom;
+  background-position: 100px;
+  background-position-y: 20px;
+  color: #cc8800;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.about-heading h2 {
+  color: #012f5d;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.about-image {
+  float: right; 
+  width: 50%; 
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 95%;  
+  display: block;
+  margin: 1rem 8rem;
+  padding: 20px 0; 
+
+}
+
+.bottom-img img {
+  display: block; /* Set the image to block-level to center it horizontally */
+  margin: auto; /* Center the image horizontally */
+}
+
+
+.about-heading::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-heading p {
+  margin-top: 1.5rem;
+  color: #5a5a5a;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333; /* Change to your desired background color */
+  color: #fff; /* Text color */
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style links in the footer if needed */
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style links on hover if needed */
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* styles.css */
+.news-card {
+  display: flex;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-image img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.news-details {
+  flex: 1;
+}
+
+.news-details h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.news-details h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.news-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
